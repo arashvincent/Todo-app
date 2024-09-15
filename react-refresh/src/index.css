@@ -1,0 +1,160 @@
+* {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #202124;
+}
+
+h1,
+h2,
+h3,
+input
+ {
+  font-family: 'Press Start 2P', system-ui;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  background: #ffffff;
+  gap: 14px;
+}
+
+.todolist ,.middleText{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+}
+
+
+
+
+header {
+  display: flex;
+  align-items: stretch;
+}
+
+header,
+.main {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 14px;
+}
+
+header input {
+  flex: 1;
+  border-radius: 14px;
+  outline: none;
+  width: 100%;
+}
+
+
+header button {
+  border-radius: 14px;
+  background: transparent;
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+
+header button:hover {
+  opacity: 0.7;
+}
+
+header button,
+header input {
+ 
+  padding: 14px 18px;
+  border-radius: 5px;
+  background: rgb(240, 240, 237);
+  
+  
+}
+
+p {
+  font-size: 0.9em;
+}
+
+p:hover{
+  color: rgb(149, 87, 16);
+}
+
+.main {
+  
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  border-radius: 14px;
+  background: rgb(211, 203, 203);
+}
+
+.todoItem p {
+  flex: 1;
+}
+
+.actionsContainer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.actionsContainer button {
+  transition-duration: 200ms;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.actionsContainer button:hover {
+  opacity: 0.7;
+}
+
+
+
+@media (min-width: 640px) {
+
+  header button,
+  header input {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+.clearall{
+  border-radius: 3px;
+  width: 10%;
+  height: 40px;
+  position: relative;
+  left:44%;
+}
+
+.clearall:hover{
+  background: rgb(172, 163, 163);
+}
+
+.wrapperText{
+  background: rgb(99, 160, 171);
+  border-radius: 10PX;
+  margin: 0 400px 0 400px;
+  
+}
+
+.fa-trash-can{
+  color: red;
+}
+
+.fa-pen-to-square{
+  color: rgb(78, 182, 147);
+}
